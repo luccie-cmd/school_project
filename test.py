@@ -1,7 +1,0 @@
-print("Hallo allen")
-print("Hallo 2")
-print("dikke berta op de beat")
-print("Arda is een goeie jongen")
-print("Kian is een goeie jongen")
-print("Ik ben een goeie jongen")
-print("hmmmmm your such a good little boy")

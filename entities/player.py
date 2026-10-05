@@ -1,0 +1,13 @@
+import components.transform
+
+class Player:
+    def __init__(self, id):
+        self.id = id
+        self.transform = components.transform.Transform(self.id, x=0, y=0)
+        self.collision = components.collision.Collision(self.transform)
+        self.inventory = []
+
+    def muur_raken(self, id): ...
+    def doos_raken(self, id): ...
+    def sleutel_raken(self, id): ...
+    def deur_raken(self, id): ...

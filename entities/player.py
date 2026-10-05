@@ -1,10 +1,11 @@
 import components.transform
+import components.collision
 
 class Player:
     def __init__(self, id):
         self.id = id
         self.transform = components.transform.Transform(self.id, x=0, y=0)
-        self.collision = components.collision.Collision(self.transform)
+        self.collision = components.collision.Collision(self.id)
         self.inventory = []
 
     def muur_raken(self, id): ...

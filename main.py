@@ -3,7 +3,6 @@
 import random
 import pygame
 
-
 WIDTH = 600
 HEIGHT = 650
 COLORS = [
@@ -31,7 +30,10 @@ def draw_game(screen, font, message, score, light=-1):
     screen.blit(points, (235, 105))
 
     for number, square in enumerate(SQUARES):
-        color = COLORS[number][1] if number == light else COLORS[number][0]
+        if number == light:
+            color = COLORS[number][1]
+        else:
+            color = COLORS[number][0]
         pygame.draw.rect(screen, color, square, border_radius=12)
 
     pygame.display.flip()

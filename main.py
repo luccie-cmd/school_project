@@ -10,7 +10,7 @@ def main():
     while True:
         if needsInit:
             pygame.init()
-            screen = pygame.display.set_mode((1920, 1080))
+            screen = pygame.display.set_mode(pygame.display.get_desktop_sizes()[0])
             pygame.display.set_caption("Keuze menu")
             font = pygame.font.Font(None, 36)
             needsInit = False
